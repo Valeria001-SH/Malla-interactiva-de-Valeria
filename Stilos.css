@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Malla Interactiva</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <h1>Mi Malla Interactiva de Cursos</h1>
-    <div class="grid">
-        <div class="grid-item" id="curso1">Curso 1</div>
-        <div class="grid-item" id="curso2">Curso 2</div>
-        <div class="grid-item" id="curso3">Curso 3</div>
-        <div class="grid-item" id="curso4">Curso 4</div>
-        <div class="grid-item" id="curso5">Curso 5</div>
-    </div>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8c8d8; /* Rosado pastel */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #ffb6c1; /* Rosado claro para los ítems */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-item:hover {
+    background-color: #ff69b4; /* Un rosado más fuerte al hacer hover */
+}
