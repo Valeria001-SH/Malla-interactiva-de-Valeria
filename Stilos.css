@@ -16,6 +16,7 @@ h1 {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 20px;
+    grid-gap: 10px;
 }
 
 .grid-item {
@@ -27,6 +28,10 @@ h1 {
     transition: background-color 0.3s;
 }
 
+.grid-item.aprobado {
+    background-color: #ff69b4; /* Rosado más fuerte al hacer clic */
+}
+
 .grid-item:hover {
-    background-color: #ff69b4; /* Un rosado más fuerte al hacer hover */
+    background-color: #ff69b4; /* Cambio de color al hacer hover */
 }
